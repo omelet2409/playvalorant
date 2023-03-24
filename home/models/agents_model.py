@@ -48,7 +48,7 @@ class Agent(models.Model):
         return reverse('agent_detail', kwargs={'slug': self.slug})
         
 
-    def save(self, *args, **kwargs):  # new
+    def save(self, *args, **kwargs):  #new
         if not self.slug:
             self.slug = slugify(self.name)
         return super().save(*args, **kwargs)

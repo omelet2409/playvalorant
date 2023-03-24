@@ -60,13 +60,15 @@ footer span {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin-bottom: 5px;
+}
+.indexHeader h1{
+  font-family: Valorant;
 }
 .indexHeaderRole {
   color: #ece7e1;
@@ -77,6 +79,34 @@ footer span {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5px;
+}
+.indexHeaderRole p{
+  color: #383e3a;
+}
+.indexHeaderRole h1{
+  font-size: large;
+  color: white;
+  font-family: Valorant;
+}
+
+.indexHeader1 {
+  color: #ece7e1;
+  height: 800px;
+  padding: 1px;
+  background-image: url(../img/news_header.png);
+  background-position: 50% 85%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -124,13 +154,16 @@ footer span {
 }
 
 .introColumn {
-  padding-left: -200px;
+  padding-left: -300px;
   display: flex;
   flex-flow: row;
 }
 
 #intro {
-  margin-left: 450px;
+  margin-left: 400px;
+}
+.intro h1{
+  font-family: Valorant;
 }
 
 .introLeft {
@@ -167,111 +200,69 @@ p {
   width: 700px;
 }
 
-/*-----------------------  Index-agentsIntro  -----------------------*/
-
-.agentsIntro {
-  width: 100%;
-  background-color: #ff4654;
-  margin-bottom: -80px;
-}
-
-.agentsColumn {
-  display: flex;
-  flex-flow: row-reverse;
-  align-items: center;
-  padding: 20px;
-}
-
-.agentsLeft {
-  width: 35%;
-}
-
-.agentsRight {
-  width: 45%;
-}
-
-.agentsRight h1 {
-  font-size: 400%;
-  margin: 0 0 30px 0;
-  color: #ece7e1;
-  text-transform: uppercase;
-}
-
-.agentsRight h2 {
-  color: #ece7e1;
-  text-transform: uppercase;
-}
-
-.agentsRight p {
-  color: #ece7e1;
-}
-
-.agentsLeft img {
-  width: 300px;
-  height: 600px;
-}
-
-.agentsSub {
-  width: 40%;
-  margin-bottom: 60px;
-}
-
-.agentsRight a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 95%;
-  text-transform: uppercase;
-  color: #0f1923;
-  background-color: #ece7e1;
-  padding: 15px 60px;
-  border-radius: 5px;
-}
-
-.agentsRight a:hover {
-  background-color: #0f1923;
-  color: #ece7e1;
-  transition: 0.5s;
-}
-
-/*-----------------------  Index-mapsIntro  -----------------------*/
-
-.mapsIntro {
-  height: 700px;
-  width: 100%;
-  background-image: url(../images/mapsIntro.png);
-  background-position: center;
-  background-repeat: no-repeat;
+/*-----------------------  insex-intro-page  -----------------------*/
+.indexIntroContainer{
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-gap: 4px;
+  padding: 20px 100px 100px;
   
 }
-
-.mapsIntro h1 {
-  color: #0f1922;
-  text-transform: uppercase;
-  font-size: 400%;
+.indexIntroContaineriner{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  border: 0px solid black;
+}
+.indexIntroContainerinerr{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  border: 0px solid black;
+  margin: 5px 5px 5px 5px;
+  background-color: #ca0c0c;
 }
 
-.mapsColumn {
-  display: flex;
-  flex-flow: row;
-  margin: 80px 0 0px 450px;
+.introitem{
+  border: 1px solid red;
+  margin: 5px 5px 5px 5px;
+}
+.introitem1{
+  border: 1px solid green;
+  margin: 5px 5px 5px 5px;
+}
+.introitem1 p{
+  color: white;
+}
+.introitem1 h1{
+  color: white;
+}
+.introitem1 h3{
+  color: white;
+}
+.introitemm{
+  border: 1px solid blue;
+  margin: 5px 5px 5px 5px;
+
+}
+.introitem0{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.introitem5{
+  
+
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.introitem9{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
-.mapsLeft {
-  width: 25%;
-  margin-top: 120px;
-  border-bottom: solid 1px black;
-}
-
-.mapsLeft h2 {
-  color: #383e3a;
-  text-transform: uppercase;
-}
-
-.mapsLeft p {
-  color: #7c7e86;
-  padding-bottom: 30px;
-}
-
+/*intro agents */
 /*-----------------------  Agents-page  -----------------------*/
 
 .agentsImages {
@@ -322,6 +313,7 @@ p {
   border-top: solid 1px #ece7e1;
   width: 20%;
   padding-top: 40px;
+  font-family: Valorant;
 }
 
 .hardwareIntro {
