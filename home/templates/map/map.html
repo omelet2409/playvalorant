@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VALORANT MAPS</title>
+        <meta name="description" content="description">
+        <meta name="author" content="OMELET">
+
+        <!-- đa nền tàng --> 
+        <meta property="og:description" content="description">
+        <meta property="og:title" content="title">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="website">
+        <meta property="og:image" content="image">
+        <meta property="og:site_name" content="site_name">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@twitter">
+        <meta name="twitter:creator" content="@twitter">
+        <meta name="twitter:title" content="OMELET | Đồ án cơ sở">
+        <meta name="twitter:description" content="description">
+        <meta name="twitter:image" content="ảnh">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <!-- Page Style -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styleagents.css' %}">
+    </head>
+
+    <body style="background-image: url('img/agent-background-generic.gif');">
+
+        <!-- Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="rightVerticalLine"><img src="img/logo.gif"></a>
+            <a href="AGENTS.html">AGENTS</a>
+            <a href="MAPS.html">MAPS</a>
+            <a href="ARSENAL.html">ARSENAL</a>
+            <a href="news.html">NEWS</a>
+            <a href="TUTORIALS.html">TUTORIALS</a>
+
+            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
+            </a>
+        </div>
+
+
+        <!-- Header with Full-Size Image -->
+        <div class="hero-image" style="background-image: url('img/agent-background-generic.gif');">
+            <p><center><h1>BẢN ĐỒ - MAPS</h1></center></p>
+            <div class="maps-bio">
+                <p>Mỗi bản đồ đều là một sân chơi để bạn thỏa sức thể hiện tư duy sáng tạo của mình. Được xây dựng với mục đích phát triển chiến lược đội nhóm, các bản đồ VALORANT hứa hẹn mang đến cho người chơi những trận giao tranh ngoạn ngục cùng với muôn vàn khoảnh khắc xuất thần. Hãy là nguồn cảm hứng cho tất cả người chơi VALORANT và tạo ra cho mình lối chơi độc nhất vô nhị.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Description Section -->
+        <div class="descriptionDiv-maps">
+        
+
+            <!-- Section -->
+            
+            <!-- Portfolio Grid -->
+            <div class="grid">
+
+                <!-- Portfolio Item -->
+                {% for map in maps %}
+                <a href="ASCENT.html" class="card">
+                    <div class="content">
+                        <img src="{{map.img.url}}" alt="Card Image" height="390" width="390">
+                        <div class="caption4>">
+                            <p class="caption4">{{map.description}}</p>
+                        </div></img>
+                        <div class="card-body">
+                            <div class="subtitle">{{map.location}}</div>
+                            <div class="title"><center>{{map.name}}</center></div>
+                            <div class="description">{{map.location}}</div>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        
+        </div>
+        <hr>
+        <div class="textBubbleDiv-others">
+            <p1>
+                <a href="https://twitter.com/PlayVALORANT" target="_blank"><img class="socialLink" src="img/twitter.png" alt="Twitter" height="25" width="25"></img></a>
+                <a href="https://www.facebook.com/VALORANTvn/" target="_blank"><img class="socialLink" src="img/facebook.png" alt="Facebook" height="25" width="25"></img></a>
+                <a href="https://www.youtube.com/c/VALORANTvn" target="_blank"><img class="socialLink2" src="img/youtube.png" alt="YouTube" height="25" width="25"></img></a>
+                <br>
+                <a href="download/Install VALORANT.exe" target="_blank"><img class="socialLink3" src="img/download.jpg" alt="Valorant"><img></a>
+            </p1>
+            </div>
+    
+            
+    
+            <!-- Navigation Script -->
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+
+        <!-- Navigation Script -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>

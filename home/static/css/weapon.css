@@ -1,0 +1,67 @@
+.container{
+    display: grid;
+    grid-template-columns: 800px 800px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    grid-gap: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.description-container{
+    display: grid;
+    grid-template-columns: 600px ;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    position: relative;
+    border: 1px solid black;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.item img{
+    filter: drop-shadow(1em 1em 0.05em #7e7e7e);
+}
+.description-item{
+    border: 0px solid black;
+}
+
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background-color: #3b00c5e5;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .3s ease ;
+    opacity: 0;
+    text-align: left;
+}
+.text{
+    color: white;
+    font-size: 20px ;
+    position: absolute;
+    font-weight: lighter;
+    padding: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0;
+    
+} 
+.item:hover .overlay {
+    opacity: 1;
+    width: 100%;
+}
+.item:hover .text{
+    opacity: 1;
+} 
+
+.item:hover img{
+    transform: scale(.95);
+    transition: .5s ease;
+}

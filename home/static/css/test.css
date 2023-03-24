@@ -1,0 +1,21 @@
+.a1 {
+    opacity: 100%; 
+
+}
+.a1:hover {
+    opacity: 50%;
+}
+.arsenal-text-des-1{
+    opacity: 100%;
+}
+.arsenal-text-des-1:hover {
+    opacity: 50% ;
+}
+.arsenal-text-des-2{
+    opacity: 50%;
+    filter:brightness(50%)
+}
+.arsenal-text-des-2:hover +.arsenal-text-des-1{
+    opacity: 100%;
+    filter:brightness(100%)
+}

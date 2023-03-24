@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPECS</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/style1.css'%}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/faviconicon.png'%}">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a> <img src="{% static 'img/header-logo.png' %}" alt="Intro Image"  height="20" width="20">  </a>
+          <a href="{% url 'home:home' %}">Home</a>
+          <a href="{% url 'home:roles' %}">Agents</a>
+          <a href="{% url 'home:specs' %}">Specs</a>
+          <a href="{% url 'home:maps' %}">Maps</a>
+          <a href="{% url 'home:weapons' %}">Arsenals</a>
+          <a href="{% url 'home:news' %}">News</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="specsIntro">
+      <h1>Specs</h1>
+    </header>
+
+    <main class="hardwareIntro">
+      <div class="hardwareBlock">
+        <h2>pc hardware requirements</h2>
+        <div class="hardwareBlock2">
+          <div><img src=" {% static 'images/computer.png' %}" alt="Image of Computer" /></div>
+          <p>Windows // 7/8/10 64-bit</p>
+          <p>RAM // 4GB</p>
+          <p>VRAM // 1GB</p>
+        </div>
+        <div class="hardwareBlock3">
+          <div class="hardwareSub1">
+            <div class="miniBlock1">
+              <img src=" {% static 'images/dash.png' %}" alt="Image of Dash" />
+            </div>
+            <p>Minimum specs / 30 FPS</p>
+            <p>Recommended specs / 60 FPS</p>
+            <p>High-end specs / 144+ FPS</p>
+          </div>
+          <div class="hardwareSub2">
+            <div class="miniBlock2">
+              <img src=" {% static 'images/cpu.png' %}" alt="Image of Dash" />
+            </div>
+            <p>Intel Core 2 Duo E8400</p>
+            <p>Intel i3-4150</p>
+            <p>Intel Core i5-4660 3.2GHZ</p>
+          </div>
+          <div class="hardwareSub3">
+            <div class="miniBlock3">
+              <img src=" {% static 'images/gpu.png' %}" alt="Image of Dash" />
+            </div>
+            <p>Intel HD 4000</p>
+            <p>Geforce GT730</p>
+            <p>GTX 1050 Ti</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2020 Riot games, inc, riot games, <span>valorant</span>, and any
+        associated logos are trademarks, service marks, and/or registered
+        trademarks of riot games, inc.
+      </p>
+    </footer>
+  </body>
+</html>

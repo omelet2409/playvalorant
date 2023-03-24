@@ -1,0 +1,161 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAY VALORANT</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/style1.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/button.css'%}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/faviconicon.png'%}">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a> <img src="{% static 'img/header-logo.png' %}" alt="Intro Image"  height="20" width="20">  </a>
+          <a href="{% url 'home:home' %}">Home</a>
+          <a href="{% url 'home:roles' %}">Agents</a>
+          <a href="{% url 'home:specs' %}">Specs</a>
+          <a href="{% url 'home:maps' %}">Maps</a>
+          <a href="{% url 'home:weapons' %}">Arsenals</a>
+          <a href="{% url 'home:news' %}">News</a>
+          
+        </li>
+      </ul>
+    </nav>
+
+    <header class="indexHeader">
+      <p>A 5v5 character-based tactical shooter</p>
+      <h1>VALORANT</h1>
+      <div>
+        <button class="btn">
+          <span class="btn__inner">
+            <span class="btn__slide"></span>
+            <span class="btn__content">PLAY NOW</span>
+          </span>
+        </button>
+    </div>
+    </header>
+
+    <div class="valorantIntro">
+      <h1 id="intro">We are valorant</h1>
+      <div class="introColumn">
+        <div class="introLeft">
+          <h2>Defy the limits</h2>
+          <p>
+            <span>Valorant</span> is your global competitive stage. It’s a 5v5
+            tac-shooter matchup to plant or defuse the Spike in a
+            one-life-per-round, first to 13 series. More than guns and bullets,
+            you’ll choose an Agent armed with adaptive, swift, and lethal
+            abilities that create opportunities to let your gunplay shine.
+            <br />
+            <br />
+            Creativity is your greatest weapon.
+          </p>
+        </div>
+        <div class="introRight">
+          <div><video width="60%" controls="">
+            <source src="{% static 'videos/gameplay.mp4'%}" type="video/mp4">
+        </video></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="agentsIntro">
+      <div class="agentsColumn">
+        <div class="agentsRight">
+          <h1>The agents</h1>
+          <div class="agentsSub">
+            <h2>Plant the spike</h2>
+            <p>
+              Agents and their signature abilities are how you win with skill
+              and style. Adapt and outplay in the role of either a Duelist,
+              Initiator, Controller, or Sentinel.
+            </p>
+          </div>
+                        <div>
+                            <a href="{% url 'home:roles' %}">
+                                <button class="btn">
+                                    <span class="btn__inner">
+                                    <span class="btn__slide"></span>
+                                    <span class="btn__content">View All Agents</span>
+                                    </span>
+                                </button></a>
+                            </div>
+        </div>
+        <div class="agentsLeft">
+            <div class="introRight">
+                <div><video width="150%" controls="">
+                  <source src="{% static 'videos/champions.mp4'%}" type="video/mp4">
+              </video></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mapsIntro">
+      <div class="mapsColumn">
+        <div class="mapsLeft">
+          <h1>YOUR MAPS</h1>
+          <h2>FIGHT AROUND THE WORLD.</h2>
+          <p style='color: black;'><b>
+            Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.</b>
+          </p>
+          <div>
+                <a href="{% url 'home:maps' %}">
+                    <button class="btn">
+                        <span class="btn__inner">
+                            <span class="btn__slide"></span>
+                            <span class="btn__content" >View All Maps</span>
+                        </span>
+                    </button>
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Share Your Socials -->
+                
+
+
+        
+
+    <br>
+    <br>
+    <footer>
+        <div class="ender">
+          
+          
+          
+          <p1>
+                <a href="https://twitter.com/PlayVALORANT" target="_blank"><img class="socialLink" src="{%static 'img/twitter.png'%}" alt="Twitter" height="50" width="50"></img></a>
+                <a href="https://www.facebook.com/VALORANTvn/" target="_blank"><img class="socialLink" src="{% static 'img/facebook.png'%}" alt="Facebook" height="50" width="50"></img></a>
+                <a href="https://www.youtube.com/c/VALORANTvn" target="_blank"><img class="socialLink2" src="{% static 'img/youtube.png'%}" alt="YouTube" height="50" width="50"></img></a>
+                <br>
+                <div>
+                    <button class="btn">
+                      <span class="btn__inner">
+                        <span class="btn__slide"></span>
+                        <span class="btn__content">DOWNLOADS</span>
+                      </span>
+                    </button>
+                </div>
+            </p1>
+        </div>
+      <p>
+        &copy; 2020 Riot games, inc, riot games, <span>valorant</span>, and any
+        associated logos are trademarks, service marks, and/or registered
+        trademarks of riot games, inc.
+      </p>
+    </footer>
+  </body>
+</html>
+
+
+
+
+               
+
+

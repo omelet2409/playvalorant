@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VALORANT AGENTS</title>
+        <meta name="description" content="description">
+        <meta name="author" content="OMELET">
+
+        <!-- đa nền tàng --> 
+        <meta property="og:description" content="description">
+        <meta property="og:title" content="title">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="website">
+        <meta property="og:image" content="image">
+        <meta property="og:site_name" content="site_name">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@twitter">
+        <meta name="twitter:creator" content="@twitter">
+        <meta name="twitter:title" content="OMELET | Đồ án cơ sở">
+        <meta name="twitter:description" content="description">
+        <meta name="twitter:image" content="ảnh">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="img/1Logo/neon.png">
+
+        <!-- Page Style -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styleagents.css' %}">
+    </head>
+
+    <body style="background-image:url('img/agent-background-generic.gif');">
+
+        <!-- Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="rightVerticalLine"><img src="img/logo.gif"></a>
+            <a href="AGENTS.html">AGENTS</a>
+            <a href="MAPS.html">MAPS</a>
+            <a href="ARSENAL.html">ARSENAL</a>
+            <a href="news.html">NEWS</a>
+            <a href="TUTORIALS.html">TUTORIALS</a>
+
+            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
+            </a>
+        </div>
+        <!-- Header with Image & Text -->
+        <div class="agents-bgimage" style="background-image: url('img/valorant.gif');">
+                <div class="agents-1">
+                    <h1>VALORANT AGENTS</h1>
+                </div>
+            </div>
+        </div>
+    
+            <!-- Description Section -->
+            <div class="descriptionDiv">   
+                <div class="grid">
+                    <style>
+                        a:hover {
+                            
+                            background-repeat: no-repeat;
+                            
+                            }   
+                    </style>
+
+                    <!-- Portfolio Item -->
+                {% for agent in agents %}
+                <a href="url " class="card">    
+                    <div >
+                        <img src="{{agent.img.url}}" alt="Card Image" height="390" width="390" class="zoom"></img>
+                            <div class="card-body">
+                                <div class="title">{{agent.name}}</div>
+                                <div class="description">{{agent.description}}</div>
+                            </div>
+                        </div> 
+                </a>
+                {% endfor %}
+                
+            </div>
+            <div class="textBubbleDiv-others">
+                <p1>
+                    <a href="https://twitter.com/PlayVALORANT" target="_blank"><img class="socialLink" src="{% static 'img/twitter.png'%}" alt="Twitter" height="25" width="25"></img></a>
+                    <a href="https://www.facebook.com/VALORANTvn/" target="_blank"><img class="socialLink" src="{% static 'img/facebook.png' %}" alt="Facebook" height="25" width="25"></img></a>
+                    <a href="https://www.youtube.com/c/VALORANTvn" target="_blank"><img class="socialLink2" src="{% static 'img/youtube.png' %}" alt="YouTube" height="25" width="25"></img></a>
+                    <br>
+                    <a href="download/Install VALORANT.exe" target="_blank"><img class="socialLink3" src="{% static 'img/download.jpg'%} " alt="Valorant"><img></a>
+                </p1>
+                </div>
+        
+                
+        
+                <!-- Navigation Script -->
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+    
+            <!-- Navigation Script -->
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+        </body>
+    </html>
