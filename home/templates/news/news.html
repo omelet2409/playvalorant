@@ -28,8 +28,11 @@
     </nav>
 
     <header>
-      
+    <div class="introheader">
       <h1>//LATEST NEWS</h1>
+      <p> Update the newest News from Valorant and Riot Games </p>
+    </div>
+
     <div class= "ho-social">
       <p>SHARE</p>
       <ul>
@@ -48,27 +51,30 @@
             </img></a>
           </li>
       </ul>
-    </div>
+    </div> 
     </header>
     {% for news in newss %}
     
     <div class="valorantIntro">
-        <h1 id="intro">
-        </h1>
-        <div class="introColumn">
-          <div class="introLeft">
-            <h2>{{news.name}}</h2>
-            <p>
-              {{news.description}}
-            </p>
-            <i> {{news.datetime}} </i> 
-          </div>
-          <a href ="{{news.link}}">
-          <div class="introRight">
-            <div><img src="{{news.img.url}}"></div>
-          </div>
+      <div class="introColumn">
+        <div class="introLeft">
+          <h2>{{news.name}}</h2>
+          <p>
+            {{news.description}}
+          </p>
+          <i> {{news.datetime}} </i>
         </div>
-      </div></a>
+        <div class="introRight">
+          <a href ="{{news.link}}">
+          <div>
+            <img src = "{{news.img.url}}">
+          </div>
+          </a
+        </div>
+      </div>
+    </div>
+
+
     {% endfor %}  
 
     <footer>
